@@ -20,7 +20,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -52,33 +52,120 @@ table {
 
 /*Styling*/
 
+* {
+    /* border: 2px solid black; */
+}
+
 body {
     font-family: 'Source Serif Pro', serif;
+    background-color: #07798a;
+    max-width: 100%;
 }
 
 h1 {
     font-family: 'Source Code Pro', monospace;
     width: 75%;
     font-size: 28px;
+    display: flex;
 }
 
-nav.nav-links {
-    width: 25%;
+h2 {
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+}
+
+nav {
     display:flex;
+    justify-content: space-between;
+}
+
+.headline {
+    width: 50%;
+}
+
+.links {
+    width: 50%;
+    display: flex;
     justify-content: space-evenly;
 }
 
 .nav-button {
     color: #fff;
-    background-color: #8B4513;
+    background-color: #365c3c;
     border-radius: 10px;
-    padding: 1% 1%;
+    padding: 2% 2%;
+    margin: 3% auto;
+    box-shadow: 1px 1px darkslategrey;
 }
 
 a {
     text-decoration: none;
 }
 
-.hero-img {
-    
+.hero {
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 85vh;
+    background-image: url(assets/camila-martinez-6Bb4lc8qo4Q-unsplash.jpg);
 }
+
+.hide {
+    font-size: 30px;
+    padding: 10% 0 0 0;
+    /* display: none; */
+    transition: 1.25s ease-in;
+}
+
+.hero .hide:hover {
+    display: flex;
+}
+
+.project-tile{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5% 0;
+    width: 40%;
+    box-shadow: 1px 1px darkslategrey;
+}
+
+.project-img{
+    width: 100%;
+}
+
+.project-title {
+    display: flex;
+    color: black;
+    background-color:#ad9158;
+    width: 100%;
+    padding: 3% 3%;
+    border-bottom: 10px;
+    justify-content: center;
+}
+
+.code {
+    color: #ad9158;
+}
+
+/* #lambda {
+    background-image: url(assets/LambdaIntroPagePreview.png);
+    width: 20%;
+}
+#product-landing {
+    background-image: url(assets/product-preview.png);
+    width: 20%;
+}
+
+#tribute-page {
+    background-image: url(assets/TributePagePreview.png);
+    width: 20%;
+}
+#survey {
+    background-image: url(assets/SurveyPagePreview.png);
+    width: 20%;
+} */

@@ -75,7 +75,7 @@ h3 {
     justify-content: center;
     margin: 3%;
     border-bottom: 1px solid black;
-    /* max-width: 60%; this line makes it justify-content: start;*/
+    /* max-width: 60%; tried to make the border-bottom line shorter but this line of code makes it act like justify-content: start;*/
 }
 
 nav {
@@ -185,17 +185,7 @@ a {
 }
 
 footer {
-    text-align: center;
     margin-bottom: 4%;
-}
-
-footer a {
-    color: #F5F5F5;
-    transition: .25s ease-in-out;
-}
-
-footer a:hover {
-    font-size: 2rem;
 }
 
 .contact-links {

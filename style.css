@@ -81,6 +81,9 @@ nav {
 
 .headline {
     width: 50%;
+    display: flex;
+    align-items: center;
+    margin: auto 2%;
 }
 
 .links {
@@ -96,10 +99,16 @@ nav {
     padding: 2% 2%;
     margin: 3% auto;
     box-shadow: 1px 1px darkslategrey;
+    transition: .8s ease-in-out;
+}
+
+.nav-button:hover {
+    background-color: #5c3736;
 }
 
 a {
     text-decoration: none;
+    margin: 4%;
 }
 
 .hero {
@@ -115,27 +124,36 @@ a {
     background-image: url(assets/camila-martinez-6Bb4lc8qo4Q-unsplash.jpg);
 }
 
-.hide {
+.hello {
     font-size: 30px;
     padding: 10% 0 0 0;
     /* display: none; */
     transition: 1.25s ease-in;
 }
 
-.hero .hide:hover {
+
+.project-grid {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .project-tile{
     display: flex;
     flex-wrap: wrap;
-    margin: 5% 0;
+    margin: 5% 5%;
     width: 40%;
     box-shadow: 1px 1px darkslategrey;
+    border-radius: 0 0 5px 5px;
 }
 
 .project-img{
     width: 100%;
+    opacity: 80%;
+    transition: .25s ease-in-out;
+}
+
+.project-img:hover {
+    opacity: 100%;
 }
 
 .project-title {
@@ -144,12 +162,17 @@ a {
     background-color:#ad9158;
     width: 100%;
     padding: 3% 3%;
-    border-bottom: 10px;
+    border-radius: 0 0 5px 5px;
     justify-content: center;
 }
 
 .code {
-    color: #ad9158;
+    color: #ad9158; 
+    transition: .5s ease-in-out;
+}
+
+.project-tile:hover .code {
+    color: black;
 }
 
 /* #lambda {

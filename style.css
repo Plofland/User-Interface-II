@@ -74,6 +74,13 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    margin: 3%;
+}
+
 nav {
     display:flex;
     justify-content: space-between;
@@ -175,20 +182,8 @@ a {
     color: black;
 }
 
-/* #lambda {
-    background-image: url(assets/LambdaIntroPagePreview.png);
-    width: 20%;
+.about {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
 }
-#product-landing {
-    background-image: url(assets/product-preview.png);
-    width: 20%;
-}
-
-#tribute-page {
-    background-image: url(assets/TributePagePreview.png);
-    width: 20%;
-}
-#survey {
-    background-image: url(assets/SurveyPagePreview.png);
-    width: 20%;
-} */

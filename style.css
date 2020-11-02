@@ -237,6 +237,80 @@ footer {
     }
     
     h2 {
+        font-size: 1.3em;
+    }
+    
+    
+    
+    /* Nav Section */
+    
+    .headline {
+        width: 30%;
+    }
+    
+    .links {
+        width: 70%;
+    }
+    
+    
+    
+    /* Hero Header */
+    
+    .hero {
+        height: 95vh;
+    }
+    
+    .hello {
+        padding: 14% 0 0 5%;
+    }
+    
+    
+    /* Project Section Main Page */
+    
+    
+    .project-tile{
+        border-radius: 10px;
+    }
+    
+    .project-img{
+        border-radius: 10px 10px 0 0;
+    }
+    
+    
+    .project-title {
+        border-radius: 0 0 10px 10px;
+        text-align: center;
+    }
+    
+    .project-title, .code {
+        font-size: 1.4rem;
+        color: black;
+    }
+
+    
+    
+    /* About Page */
+    
+    .about {
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+    }
+    
+}
+
+
+/* Phone Media Query */
+@media (max-width: 500px) {
+    
+    
+
+    h1 {
+        font-size: 1.2rem;
+        
+    }
+    
+    h2 {
         font-family: 'Source Code Pro', monospace;
         text-align: center;
         font-size: 1.3em;
@@ -257,29 +331,38 @@ footer {
     nav {
         display:flex;
         justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid black;
+        
     }
+
+    
     
     .headline {
-        width: 30%;
-        display: flex;
-        align-items: center;
-        margin: auto 2%;
+        width: 35%;
+        border-bottom: 2px solid black;
+        
+        
     }
     
     .links {
-        width: 70%;
+        width: 90%;
         display: flex;
+        flex-direction: column;
         justify-content: space-evenly;
+        
     }
     
     .nav-button {
         color: #fff;
         background-color: #365c3c;
-        border-radius: 10px;
-        padding: 2% 2%;
-        margin: 3% auto;
+        border-radius: 5px;
+        margin: 1% auto;
         box-shadow: 1px 1px darkslategrey;
         transition: .8s ease-in-out;
+        font-size: 1.3rem;
+        padding: 2% 10% 2% 10%;
     }
     
     
@@ -313,7 +396,7 @@ footer {
     
     .project-grid {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
     }
     
@@ -321,7 +404,7 @@ footer {
         display: flex;
         flex-wrap: wrap;
         margin: 5% 5%;
-        width: 85%;
+        width: 40%;
         box-shadow: 1px 1px darkslategrey;
         border-radius: 10px;
     }
@@ -385,11 +468,5 @@ footer {
         color: #F5F5F5;
         width: 40%;
     }
-    
-}
 
-
-/* Phone Media Query */
-@media (max-width: 500px) {
-    
 }

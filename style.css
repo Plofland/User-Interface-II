@@ -87,9 +87,13 @@ nav {
 .headline {
     width: 40%;
     display: flex;
-    padding-left: 2%;
     align-items: center;
     margin: auto 2%;
+}
+
+.headline a {
+    color: black;
+    text-align: center;
 }
 
 .links {
@@ -116,6 +120,7 @@ a {
     text-decoration: none;
     margin: 4%;
 }
+
 
 
 /* Hero Header */
@@ -223,18 +228,18 @@ footer {
     transform: translateY(-8px);
 }
 
-/* Phone Media Query */
-@media (max-width: 960px) {
+/* Tablet Media Query */
+@media (max-width: 800px) {
     
     
     h1 {
         font-size: 1.2rem;
-        display: flex;
     }
     
     h2 {
         font-family: 'Source Code Pro', monospace;
         text-align: center;
+        font-size: 1.3em;
     }
     
     h3 {
@@ -255,14 +260,14 @@ footer {
     }
     
     .headline {
-        width: 50%;
+        width: 30%;
         display: flex;
         align-items: center;
         margin: auto 2%;
     }
     
     .links {
-        width: 50%;
+        width: 70%;
         display: flex;
         justify-content: space-evenly;
     }
@@ -277,9 +282,6 @@ footer {
         transition: .8s ease-in-out;
     }
     
-    .nav-button:hover {
-        background-color: #5c3736;
-    }
     
     a {
         text-decoration: none;
@@ -303,10 +305,7 @@ footer {
     }
     
     .hello {
-        font-size: 30px;
-        padding: 10% 0 0 0;
-        /* display: none; */
-        transition: 1.25s ease-in;
+        padding: 14% 0 0 5%;
     }
     
     
@@ -315,27 +314,24 @@ footer {
     .project-grid {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
+        align-items: center;
     }
     
     .project-tile{
         display: flex;
         flex-wrap: wrap;
         margin: 5% 5%;
-        width: 40%;
+        width: 85%;
         box-shadow: 1px 1px darkslategrey;
-        border-radius: 0 0 5px 5px;
+        border-radius: 10px;
     }
     
     .project-img{
         width: 100%;
-        opacity: 1;
         transition: .25s ease-in-out;
+        border-radius: 10px 10px 0 0;
     }
     
-    .project-img:hover {
-        opacity: 100%;
-    }
     
     .project-title {
         display: flex;
@@ -343,18 +339,19 @@ footer {
         background-color:#ad9158;
         width: 100%;
         padding: 3% 3%;
-        border-radius: 0 0 5px 5px;
+        border-radius: 0 0 10px 10px;
         justify-content: center;
     }
     
-    .code {
-        color: #ad9158; 
-        transition: .5s ease-in-out;
+    .project-title, .code {
+        font-size: 1.5rem;
     }
-    
-    .project-tile:hover .code {
+
+    .code {
         color: black;
     }
+    
+
     
     
     /* About Page */
@@ -389,7 +386,10 @@ footer {
         width: 40%;
     }
     
-    .contact-details:hover {
-        transform: translateY(-8px);
-    }
+}
+
+
+/* Phone Media Query */
+@media (max-width: 500px) {
+    
 }

@@ -71,10 +71,13 @@ h3 {
     font-size: 2rem;
     display: flex;
     justify-content: center;
-    margin: 3%;
+    margin: 4% auto;
     border-bottom: 1px solid black;
-    /* max-width: 60%; tried to make the border-bottom line shorter but this line of code makes it act like justify-content: start;*/
+    
+    max-width: 60%; /*tried to make the border-bottom line shorter but this line of code makes it act like justify-content: start;*/
+    
 }
+
 
 
 /* Nav Section */
@@ -201,6 +204,7 @@ a {
     text-align: center;
     width: 60%;
     margin: 0 auto;
+    font-size: 1.4rem;
 }
 
 
@@ -291,7 +295,6 @@ footer {
     /* About Page */
     
     .about {
-        font-size: 1.4rem;
         width: 75%;
         line-height: 1.2;
     }

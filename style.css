@@ -122,7 +122,6 @@ a {
 }
 
 
-
 /* Hero Header */
 
 .hero {
@@ -136,12 +135,12 @@ a {
     max-width: 100%;
     height: 90vh;
     background-image: url(assets/camila-martinez-6Bb4lc8qo4Q-unsplash.jpg);
+    box-shadow: inset 0 0 80px #07798a;
 }
 
 .hello {
     font-size: 30px;
     padding: 10% 0 0 0;
-    /* display: none; */
     transition: 1.25s ease-in;
 }
 
@@ -185,6 +184,10 @@ a {
 .code {
     color: #ad9158; 
     transition: .5s ease-in-out;
+}
+
+.project-title, .code {
+    font-size: 1.6rem;
 }
 
 .project-tile:hover .code {
@@ -241,7 +244,6 @@ footer {
     }
     
     
-    
     /* Nav Section */
     
     .headline {
@@ -253,11 +255,10 @@ footer {
     }
     
     
-    
     /* Hero Header */
     
     .hero {
-        height: 95vh;
+        height: 70vh;
     }
     
     .hello {
@@ -267,15 +268,14 @@ footer {
     
     /* Project Section Main Page */
     
-    
     .project-tile{
         border-radius: 10px;
     }
     
     .project-img{
         border-radius: 10px 10px 0 0;
+        opacity: 1;
     }
-    
     
     .project-title {
         border-radius: 0 0 10px 10px;
@@ -287,14 +287,13 @@ footer {
         color: black;
     }
 
-    
-    
+
     /* About Page */
     
     .about {
-        text-align: center;
-        width: 60%;
-        margin: 0 auto;
+        font-size: 1.4rem;
+        width: 75%;
+        line-height: 1.2;
     }
     
 }
@@ -306,25 +305,15 @@ footer {
     
 
     h1 {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         
     }
     
     h2 {
-        font-family: 'Source Code Pro', monospace;
-        text-align: center;
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
     
-    h3 {
-        font-size: 2rem;
-        display: flex;
-        justify-content: center;
-        margin: 3%;
-        border-bottom: 1px solid black;
-        /* max-width: 60%; tried to make the border-bottom line shorter but this line of code makes it act like justify-content: start;*/
-    }
-    
+       
     
     /* Nav Section */
     
@@ -333,140 +322,47 @@ footer {
         justify-content: space-between;
         flex-direction: column;
         align-items: center;
-        border: 2px solid black;
-        
     }
 
-    
-    
     .headline {
-        width: 35%;
+        width: 45%;
+        padding-left: 1%; /*couldn't get the h1 text to center so this is a quick fix for that */
         border-bottom: 2px solid black;
-        
-        
     }
     
     .links {
         width: 90%;
-        display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        
     }
     
     .nav-button {
-        color: #fff;
-        background-color: #365c3c;
+        width: 60%;
+        text-align: center;
         border-radius: 5px;
         margin: 1% auto;
-        box-shadow: 1px 1px darkslategrey;
-        transition: .8s ease-in-out;
         font-size: 1.3rem;
-        padding: 2% 10% 2% 10%;
-    }
-    
-    
-    a {
-        text-decoration: none;
-        margin: 4%;
     }
     
     
     /* Hero Header */
     
     .hero {
-        background-size:cover;
-        background-repeat:no-repeat;
-        background-position:center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        max-width: 100%;
-        height: 90vh;
-        background-image: url(assets/camila-martinez-6Bb4lc8qo4Q-unsplash.jpg);
-    }
-    
-    .hello {
-        padding: 14% 0 0 5%;
+        height: 60vh;
     }
     
     
     /* Project Section Main Page */
     
-    .project-grid {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-    
-    .project-tile{
-        display: flex;
-        flex-wrap: wrap;
-        margin: 5% 5%;
-        width: 40%;
-        box-shadow: 1px 1px darkslategrey;
-        border-radius: 10px;
-    }
-    
-    .project-img{
-        width: 100%;
-        transition: .25s ease-in-out;
-        border-radius: 10px 10px 0 0;
-    }
-    
-    
-    .project-title {
-        display: flex;
-        color: black;
-        background-color:#ad9158;
-        width: 100%;
-        padding: 3% 3%;
-        border-radius: 0 0 10px 10px;
-        justify-content: center;
-    }
     
     .project-title, .code {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
-    .code {
-        color: black;
-    }
-    
-
-    
     
     /* About Page */
     
     .about {
-        text-align: center;
-        width: 60%;
-        margin: 0 auto;
-    }
-    
-    
-    /* Social Links */
-    
-    footer {
-        margin-bottom: 4%;
-    }
-    
-    .contact-links {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        flex-wrap: wrap;
-    }
-    
-    .contact-details {
-        display: flex;
-        justify-content: center;
-        font-size: 2rem;
-        text-shadow: 2px 2px 1px darkslategrey;
-        transition: transform 0.3s ease-out;
-        color: #F5F5F5;
-        width: 40%;
-    }
+        width: 85%;
+    } 
 
 }
